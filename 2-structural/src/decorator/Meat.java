@@ -1,20 +1,19 @@
 package decorator;
 
 public class Meat implements Pizza {
-    public Meat(Pizza pizza) {
-        // TODO: implement
+    private Pizza pizza;
 
+    public Meat(Pizza pizza) {
+        this.pizza = pizza;
     }
 
     @Override
     public String getDesc() {
-        // TODO: implement
-        return null;
+        return pizza.getDesc()+ " meat";
     }
 
     @Override
     public double getPrice() {
-        // TODO: implement
-        return 0;
+        return pizza.getPrice() + 3.0;
     }
 }

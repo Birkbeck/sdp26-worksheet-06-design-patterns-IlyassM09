@@ -1,19 +1,23 @@
 package decorator;
 
 public class Spinach implements Pizza {
+
+    private Pizza pizza;
+
     public Spinach(Pizza pizza) {
-        // TODO: implement
+        super();
+        this.pizza = pizza;
     }
 
     @Override
     public String getDesc() {
-        // TODO: implement
-        return null;
+
+        return pizza.getDesc()+ "Spinash";
     }
 
     @Override
     public double getPrice() {
-        // TODO: implement
-        return 0;
+
+        return pizza.getPrice()+ 1.3;
     }
 }

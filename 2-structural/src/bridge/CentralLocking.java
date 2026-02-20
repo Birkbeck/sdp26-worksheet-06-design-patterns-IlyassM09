@@ -2,18 +2,21 @@ package bridge;
 
 public class CentralLocking implements Product {
 
+    private String productName;
+
     public CentralLocking(String productName) {
-        // TODO: implement
+        this.productName = productName;
     }
 
     @Override
     public String productName() {
         // TODO: implement
-        return null;
+        return this.productName;
     }
 
     @Override
     public void produce() {
         // TODO: implement
+        System.out.println("Producing "+ this.productName);
     }
 }

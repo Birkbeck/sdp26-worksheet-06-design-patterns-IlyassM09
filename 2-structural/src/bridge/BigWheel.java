@@ -8,11 +8,12 @@ public class BigWheel extends Car {
 
     @Override
     public void assemble() {
-        // TODO: implement
+        System.out.println("Assembling "+ product.productName()+" for "+ carType );
     }
 
     @Override
     public void produceProduct() {
-        // TODO: implement
+        product.produce();
+        System.out.println("Modifying product "+product.productName()+" according to "+ carType);
     }
 }

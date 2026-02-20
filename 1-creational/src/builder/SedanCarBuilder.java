@@ -2,34 +2,36 @@ package builder;
 
 public class SedanCarBuilder implements CarBuilder{
 
+    private String bodyStyle, power , engine , breaks, seats, windows, fuelType;
+
     @Override
     public void buildBodyStyle() {
-        // TODO: implement
+        this.bodyStyle = "External dimensions: overall length (inches): 202.9, overall width (inches): 76.2, overall height (inches):";
     }
 
     @Override
     public void buildPower(){
-        // TODO: implement
+        this.power = "285 hp @ 6,500 rpm; 253 ft lb of torque @ 4,000 rpm";
     }
 
     @Override
     public void buildEngine() {
-        // TODO: implement
+        this.engine = "3.5L Duramax V 6 DOHC";
     }
 
     @Override
     public void buildBreaks() {
-        // TODO: implement
+        this.breaks = "Four-wheel disc brakes: two ventilated. Electronic brake distribution";
     }
 
     @Override
     public void buildSeats() {
-        // TODO: implement
+
     }
 
     @Override
     public void buildWindows() {
-        // TODO: implement
+
     }
 
     @Override

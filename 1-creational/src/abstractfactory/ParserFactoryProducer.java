@@ -5,7 +5,10 @@ public final class ParserFactoryProducer {
     private ParserFactoryProducer() { }
 
     public static AbstractParserFactory getFactory(String factoryType) {
-        // TODO: implement
-        return null;
+        return switch (factoryType){
+            case "CLFactory" -> new CLParserFactory();
+            case "NYFactory" -> new NYParserFactory();
+            default -> throw new IllegalArgumentException("Factory type is not allowed!");
+        };
     }
 }
